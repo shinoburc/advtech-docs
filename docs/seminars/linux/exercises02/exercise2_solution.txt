@@ -1,0 +1,28 @@
+1	  vi test.txt
+2	  yy(1行コピー) p(貼り付け)
+3	  dd(1行カット)
+4	  :set number
+5	  /ccc
+6	  :%s/bbb/ /
+7	  ls /etc
+8	  ls | grep host
+9	  ls host????
+10	ls host???e
+11	find /etc/ -name hosts
+12	find /etc/ -name "host*"
+13	#!/bin/sh
+echo "今の時間は `date` です"
+14	chmod 744 today
+15	./today
+16	export PATH=/home/yourusername/:$PATH
+17	ls /etc/ | grep host 
+18	ls /etc/bin/*d
+19	touch test
+20	touch -d 2000/1/1 00:00:00 am test
+21	tail -f test
+22	echo "hello" >> test
+23	tail コマンドを実行している端末をチェック
+24	sort datafile
+25	sort -k 2,2 datafile
+26	sort -r -k 2,2 datafile
+27	sort -n -k 3,3 datafile

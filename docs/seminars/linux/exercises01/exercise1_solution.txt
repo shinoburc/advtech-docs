@@ -1,0 +1,43 @@
+1	pwd
+2	cd /var/log
+3	ls
+4	cd ../../
+5	ls -l
+6	ls -lhS, ls -lhSr
+7	echo $LANG
+8	export LANG=ja_JP.UTF-8
+9	cd
+10	ls -a
+11	mkdir work
+12	mkdir -p work/dir1/dir2
+13	touch work/memo{1..3}.txt
+14	echo "YOUR-NAME" >> work/memo1.txt
+15	date >> work/memo1.txt
+16	ls >> work/memo2.txt
+17	cat work/memo1.txt work/memo2.txt >> work/memo3.txt
+18	cp work/memo3.txt work/memo4.txt
+19	cp -a work/memo3.txt work/memo4.txt 
+20	diff -q work/memo3.txt work/memo4.txt
+21	echo "YOUR-NAME" >> work/memo4.txt, diff -q work/memo3.txt work/memo4.txt
+22	rm work/memo3.txt
+23	mv work/memo4.txt work/memo3.txt
+24	cp -r work work2
+25	rm -r work
+26	mv work2 work
+27	less /etc/sysctl.conf
+28	less -N /etc/sysctl.conf
+29	env
+30	env | less
+31	env | grep LANG | less
+32	env | head -n 5
+33	env | tail -n 5
+34	su
+35	adduser ameku
+36	passwd ameku
+37	exit
+38	chmod 700 work
+39	sudo su ameku, ls work
+40	exit, su, usedel -r ameku
+41	ps
+42	tail -f /var/log/messages&
+43	kill -9 processid(ps コマンドで調べる)
