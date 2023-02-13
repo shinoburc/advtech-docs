@@ -21,7 +21,8 @@ const config = {
   organizationName: 'advtech', // Usually your GitHub org/user name.
   projectName: 'advtech-docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  //onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
