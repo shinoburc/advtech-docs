@@ -25,5 +25,6 @@ Linuxの基礎知識を習得する。
 1. [演習01](./exercises01) 
 1. [エディタ(動画)](editor01)
 1. [エディタ(ドキュメント)](editor02)
-1. [パッケージマネージャ](package_manager)
+1. [パッケージマネージャ(動画)](package_manager01)
+1. [パッケージマネージャ(ドキュメント)](package_manager01)
 1. [演習02](./exercises02)
