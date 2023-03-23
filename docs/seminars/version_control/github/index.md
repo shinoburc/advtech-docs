@@ -1,7 +1,7 @@
 # GitHub
 
 - [Git リポジトリは増える](git_repo.md)
-- [GitHub を探検する](github.md)
+- [GitHub を探検する](github_site.md)
 - [初めてのコラボレーション](collaborate.md)
 - [最高の機能 Pull Request をためして見る](pr.md)
 - [Visual Studio から Git を操る](git_visual_studio.md)
