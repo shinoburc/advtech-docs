@@ -40,7 +40,7 @@
     1. [課題設定](problem.md)
     1. [新業務設計](tobe.md)
     1. [要件決定](decision.md)
-1. [要望一覧](../system_dev/demand_list.md)
+1. [要望一覧](../development/demand_list.md)
 1. [まとめ](review.md)
 1. [演習：要件定義演習](xercise.md)
 1. [マジカ](magica)

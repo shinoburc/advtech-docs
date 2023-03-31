@@ -4,7 +4,7 @@
 要件定義
 ------------------------------
 
-[現状分析](analysis.md)と[要望一覧](../system_dev/demand_list.md)を踏まえ、
+[現状分析](analysis.md)と[要望一覧](../development/demand_list.md)を踏まえ、
 要件定義を行いましょう。
 
 手順
