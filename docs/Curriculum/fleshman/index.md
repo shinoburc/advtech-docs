@@ -12,7 +12,9 @@
   - [TypeScript](../../seminars/TypeScript/)
 - [バージョン管理](../../seminars/version_control/)
 - [データベース](../../seminars/DB/)
-- [アプリケーションプログラミング](../../seminars/nextjs/)
+- アプリケーションプログラミング
+  - [React](../../seminars/react/)
+  - [Next.js](../../seminars/nextjs/)
 - [プロジェクトマネジメント入門](../../seminars/PM/)
 - [要件定義](../../seminars/development_process/requirement_definition/)
 - [外部設計](../../seminars/development_process/external_design/)
