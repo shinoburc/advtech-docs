@@ -9,7 +9,9 @@
 - [Webシステム基礎](../../seminars/web/)
 - プログラミング
   - [JavaScript](../../seminars/JavaScript/)
+  - [オブジェクト指向プログラミング](../../seminars/OOP/)
   - [TypeScript](../../seminars/TypeScript/)
+  - [デザインパターン](../../seminars/DesignPattern/)
 - [バージョン管理](../../seminars/version_control/)
 - [データベース](../../seminars/DB/)
 - アプリケーションプログラミング
