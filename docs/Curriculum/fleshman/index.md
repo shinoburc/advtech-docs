@@ -15,7 +15,7 @@
 - [バージョン管理](../../seminars/version_control/)
 - [データベース](../../seminars/DB/)
 - アプリケーションプログラミング
-  - [React](../../seminars/react/)
+  - [React](../../seminars/React/)
   - [Next.js](../../seminars/nextjs/)
 - [プロジェクトマネジメント入門](../../seminars/PM/)
 - [要件定義](../../seminars/development_process/requirement_definition/)
