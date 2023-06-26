@@ -19,7 +19,7 @@ TypeScript で使用しやすいように設計されています。つまり、
 以下のコマンドを実行し `prisma` をインストールしてください。
 
 ```shell
-npm install --save @prisma/client
+npm install --save @prisma/client 
 npm install --save-dev prisma ts-node
 ```
 
@@ -64,31 +64,32 @@ datasource db {
 //  url      = "file:./dev.db"
 //}
 
+
 model Account {
-  id                 String  @id @default(cuid())
+  id                 String    @id @default(cuid())
   userId             String
-  type               String
-  provider           String
+  providerType       String
+y  providerId         String
   providerAccountId  String
-  refresh_token      String?  @db.Text
-  access_token       String?  @db.Text
-  expires_at         Int?
-  token_type         String?
-  scope              String?
-  id_token           String?  @db.Text
-  session_state      String?
+  refreshToken       String?
+  accessToken        String?
+  accessTokenExpires DateTime?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+  user               User      @relation(fields: [userId], references: [id])
 
-  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@unique([provider, providerAccountId])
+  @@unique([providerId, providerAccountId])
 }
 
 model Session {
   id           String   @id @default(cuid())
-  sessionToken String   @unique
   userId       String
   expires      DateTime
-  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sessionToken String   @unique
+  accessToken  String   @unique
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  user         User     @relation(fields: [userId], references: [id])
 }
 
 model User {
@@ -100,6 +101,8 @@ model User {
   email         String   @unique
   emailVerified DateTime?
   image         String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
   accounts      Account[]
   sessions      Session[]
 
@@ -112,10 +115,14 @@ model User {
   department Department     @relation(fields: [departmentId], references: [id])
 }
 
-model VerificationToken {
+
+model VerificationRequest {
+  id         String   @id @default(cuid())
   identifier String
   token      String   @unique
   expires    DateTime
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
 
   @@unique([identifier, token])
 }
