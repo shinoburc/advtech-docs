@@ -47,6 +47,7 @@ npx prisma init
 `prisma/schema.prisma` を以下のように変更してください。
 
 ```ts title="prisma/schema.prisma" showLineNumbers
+
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
@@ -64,12 +65,11 @@ datasource db {
 //  url      = "file:./dev.db"
 //}
 
-
 model Account {
   id                 String    @id @default(cuid())
   userId             String
   providerType       String
-y  providerId         String
+  providerId         String
   providerAccountId  String
   refreshToken       String?
   accessToken        String?
@@ -114,7 +114,6 @@ model User {
   departmentId String
   department Department     @relation(fields: [departmentId], references: [id])
 }
-
 
 model VerificationRequest {
   id         String   @id @default(cuid())

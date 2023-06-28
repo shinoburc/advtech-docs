@@ -7,83 +7,58 @@ sidebar_position: 7
 汎用的に使用するUIの部品を React のコンポーネントして実装します。
 
 ここでは例として感謝カード(thanks_cardモデル)の一覧を表示するコンポーネントを実装し、
-システムのトップ画面(`pages/index.tsx`) に表示します。
-
-## サーバサイド
-
-### API
-
-ThanksCard テーブル全件を取得するための API を実装します。
-
-URL は `/api/thanks_card` とします。
-HTTP メソッドは `GET` とします。
-
-`@/utils/isValidToken` を使用して認証済みの場合のみ API を実行できるようにしています。
-
-```ts title="pages/api/thanks_card/index.ts"
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-
-import { ThanksCard } from "@prisma/client";
-import { prisma } from "@/utils/prismaSingleton";
-import { isValidToken } from "@/utils/isValidToken";
-
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<ThanksCard[]>
-) {
-  if (!isValidToken(req)) res.status(401).end();
-
-  const thanks_cards = await prisma.thanksCard.findMany({
-    include: {
-      from: true,
-      to: true,
-    },
-  });
-  res.status(200).json(thanks_cards);
-}
-```
-
-## クライアントサイド
+システムのトップ画面(`app/page.tsx`) に表示します。
 
 ### 感謝カード一覧表示コンポーネントの実装
 
-```tsx title="components/thanks_card/list.tsx"
-import React from "react";
-import useSWR from "swr";
-import { Prisma } from "@prisma/client";
+```tsx title="app/_components/thanks_card/list.tsx"
+'use client';
+
+import React from 'react';
+import { Prisma, Department } from '@prisma/client';
 
 /* ライブラリ Material-UI が提供するコンポーネントの import */
-import TableContainer from "@mui/material/TableContainer";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
+import TableContainer from '@mui/material/TableContainer';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableHead from '@mui/material/TableHead';
+import TableRow from '@mui/material/TableRow';
+import Paper from '@mui/material/Paper';
 
-import { fetcher } from "@/utils/fetcher";
+import type { ThanksCardWithFromToList } from '@/app/_repositories/ThanksCard';
 
-function ThanksCardList() {
-  /* ThanksCard の外部キー(From, To)も含んだ型を定義している */
-  type ThanksCardPayload = Prisma.ThanksCardGetPayload<{
+// reference:
+// https://www.prisma.io/docs/concepts/components/prisma-client/advanced-type-safety/operating-against-partial-structures-of-model-types#problem-using-variations-of-the-generated-model-type
+/*
+const thanksCardWithFromTo = Prisma.validator<Prisma.ThanksCardArgs>()({
     include: {
-      from: true;
-      to: true;
-    };
-  }>;
-  /* SWR を使用して /api/thanks_card からデータを取得し、 thanks_cards 配列で受け取る */
-  const { data: thanks_cards, error } = useSWR<ThanksCardPayload[]>(
-    "/api/thanks_card",
-    fetcher
-  );
+        from: true,
+        to: true,
+    }
+});
+type ThanksCardWithFromTo = Prisma.ThanksCardGetPayload<typeof thanksCardWithFromTo>
+*/
 
-  if (error) return <div>An error has occurred.</div>;
-  if (!thanks_cards) return <div>Loading...</div>;
+/*
+type ThanksCardWithFromTo = Prisma.ThanksCardGetPayload<{
+    include: {
+        from: true;
+        to: true;
+    }
+}>
+*/
+
+type Props = {
+  thanks_cards: ThanksCardWithFromToList;
+};
+
+function ThanksCardList(props: Props) {
+  const thanks_cards = props.thanks_cards;
 
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650 }} aria-label='simple table'>
         <TableHead>
           <TableRow>
             <TableCell>id</TableCell>
@@ -96,7 +71,7 @@ function ThanksCardList() {
         </TableHead>
         <TableBody>
           {/* thanks_cards 全件をテーブル出力する */}
-          {thanks_cards?.map((thanks_card: ThanksCardPayload) => {
+          {thanks_cards?.map((thanks_card) => {
             return (
               /* 一覧系の更新箇所を特定するために一意となる key を設定する必要がある */
               <TableRow key={thanks_card.id}>
@@ -120,36 +95,124 @@ export default ThanksCardList;
 
 ### コンポーネントの使用
 
-`pages/index.tsx` を以下のように変更し、感謝カード一覧コンポーネントを表示するようにしてください。
+`app/page.tsx` を以下のように変更し、感謝カード一覧コンポーネントを表示するようにしてください。
 
-```tsx title="pages/index.tsx"
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+サーバコンポーネントとして動作するように変更(signOutの削除)していますので、
+`'use client'`も削除しています。
 
-import ThanksCardList from "@/components/thanks_card/list";
+```tsx title="app/page.tsx"
+import Image from 'next/image';
+import styles from './page.module.css';
+import Link from 'next/link';
 
-const Home: NextPage = () => {
+import { ThanksCardRepository } from '@/app/_repositories/ThanksCard';
+import ThanksCardList from '@/app/_components/thanks_card/list';
+
+export default async function Home() {
+  const thanks_cards = await ThanksCardRepository.findMany();
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>ThanksCard</title>
-        <meta name='description' content='Generated by create next app' />
-        <link rel='icon' href='/favicon.ico' />
-      </Head>
+    <main className={styles.main}>
+      <div className={styles.description}>
+        <ThanksCardList thanks_cards={thanks_cards} />
+        <p>
+          Get started by editing&nbsp;
+          <code className={styles.code}>app/page.tsx</code>
+        </p>
+        <div>
+          <ul>
+            <li>
+              <Link href='file-uploader' className='underline'>
+                File Uploader
+              </Link>
+            </li>
+            <li>
+              <Link href='qr-code-reader' className='underline'>
+                QR Code Reader
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a
+            href='https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            By{' '}
+            <Image
+              src='/vercel.svg'
+              alt='Vercel Logo'
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
+          </a>
+        </div>
+      </div>
 
-      <main>
-        <h1 className={styles.title}>
-          Home
-        </h1>
-        <ThanksCardList />
-      </main>
+      <div className={styles.center}>
+        <Image
+          className={styles.logo}
+          src='/next.svg'
+          alt='Next.js Logo'
+          width={180}
+          height={37}
+          priority
+        />
+      </div>
 
-      <footer className={styles.footer}>
-      </footer>
-    </div>
+      <div className={styles.grid}>
+        <a
+          href='https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
+          className={styles.card}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <h2>
+            Docs <span>-&gt;</span>
+          </h2>
+          <p>Find in-depth information about Next.js features and API.</p>
+        </a>
+
+        <a
+          href='https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
+          className={styles.card}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <h2>
+            Learn <span>-&gt;</span>
+          </h2>
+          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+        </a>
+
+        <a
+          href='https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
+          className={styles.card}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <h2>
+            Templates <span>-&gt;</span>
+          </h2>
+          <p>Explore the Next.js 13 playground.</p>
+        </a>
+
+        <a
+          href='https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app'
+          className={styles.card}
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <h2>
+            Deploy <span>-&gt;</span>
+          </h2>
+          <p>Instantly deploy your Next.js site to a shareable URL with Vercel.</p>
+        </a>
+      </div>
+    </main>
   );
-};
-
-export default Home;
+}
 ```

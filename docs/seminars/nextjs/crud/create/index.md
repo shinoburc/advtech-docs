@@ -1,134 +1,39 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # 作成(Create)
 
 User テーブルに対して Create を行う機能を実装します。
 
-## サーバサイド
-
-### API
+## ユーザ作成APIの実装
 
 User テーブルにレコードを1件挿入する API を実装します。
 
-URL は `/api/user` とします。
-HTTP メソッドは `POST` とします。
+URL は /api/user とします。 HTTP メソッドは POST とします。
 
-`pages/api/user/index.ts` を以下のように書き換えてください。
-(主に handlePost 関数を追加しています。)
+`pages/api/user/route.ts` を作成し、以下のように実装してください。
 
-```ts title="pages/api/user/index.ts"
-import type { NextApiRequest, NextApiResponse } from "next";
+```ts title="app/api/user/route.ts"
+import { NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
 
-import { User } from "@prisma/client";
-import { prisma } from "@/utils/prismaSingleton";
+import { User } from '@prisma/client';
+import { UserRepository } from '@/app/_repositories/User';
 
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse
-) {
-  if (req.method === "GET") {
-    return handleGet(req, res);
-  // highlight-start
-  } else if (req.method === "POST") {
-    return handlePost(req, res);
-  }
-  // highlight-end
-}
-
-const handleGet = async (req: NextApiRequest, res: NextApiResponse<User[]>) => {
-  const users = await prisma.user.findMany({
-    include: {
-      role: true,
-      department: true,
-    },
-  });
-  res.status(200).json(users);
-};
-
-  // highlight-start
-const handlePost = async (req: NextApiRequest, res: NextApiResponse<User>) => {
-  //const user: User = req.body;
-  //const createdUser = await prisma.user.create({ data: user });
-
-  /*
-  // スプレッド構文を使用しない場合。
-  // (補足)プロパティ名と変数名が一致しているため、プロパティ名は省略できる。
-  const { name, email, password, roleId, departmentId } = req.body;
-  const createdUser = await prisma.user.create({
-    data: {
-      name: name,
-      email: email,
-      password: password,
-      roleId: roleId,
-      departmentId: departmentId,
-    },
-  });
-  */
-
-  // スプレッド構文を使用する場合
+export async function POST(request: NextRequest) {
   try {
-    const createdUser = await prisma.user.create({
-      data: {
-        ...req.body,
-      },
-    });
-    res.status(200).json(createdUser);
+    const user: User = await request.json();
+    const createdUser = UserRepository.create(user);
+    return NextResponse.json(createdUser);
   } catch (e) {
-    //if (e instanceof Prisma.PrismaClientKnownRequestError) {
-    res.status(500).end();
+    //return NextResponse.next({ status: 500 });
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
-};
-// highlight-end
-```
-
-参考リンク
-- [create - prisma](https://www.prisma.io/docs/reference/api-reference/prisma-client-reference#create)
-
-### Role and Department API
-
-ユーザ登録機能を実装するためには、ユーザに設定された Role、ユーザが所属する Department も扱う必要がります。
-
-ここで、Role を全件取得する API、Department を全件取得する API を実装します。
-プログラムの内容は「User テーブル全件を取得するための API」とほとんど同じです。
-
-`pages/api/role/index.ts` と `pages/api/department/index.ts` を以下のように実装してください。
-
-```ts title="pages/api/role/index.ts"
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-
-import { Role } from "@prisma/client";
-import { prisma } from "@/utils/prismaSingleton";
-
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Role[]>
-) {
-  const roles = await prisma.role.findMany();
-  res.status(200).json(roles);
 }
 ```
 
-```ts title="pages/api/department/index.ts"
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-
-import { Department } from "@prisma/client";
-import { prisma } from "@/utils/prismaSingleton";
-
-export default async function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Department[]>
-) {
-  const departments = await prisma.department.findMany();
-  res.status(200).json(departments);
-}
-```
-
-
-## クライアントサイド
+## ユーザ作成画面の実装
 
 ### バリデーションライブラリの導入
 
@@ -244,18 +149,15 @@ React には様々な入力フォーム管理ライブラリがありますが�
 npm install --save react-hook-form @hookform/resolvers
 ```
 
-### ユーザ登録画面の実装
+### ユーザ作成フォーム表示コンポーネントの実装
 
-```tsx title="pages/user/create.tsx"
+```tsx title="app/user/_components/user-form.tsx"
+'use client';
 
-import type { NextPage } from 'next';
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-
-import useSWR from 'swr';
-import { Prisma } from '@prisma/client';
 
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
@@ -265,42 +167,77 @@ import MenuItem from '@mui/material/MenuItem';
 import FormHelperText from '@mui/material/FormHelperText';
 import Button from '@mui/material/Button';
 
-import { fetcher } from '@/utils/fetcher';
-import { userFormSchema, UserFormData } from '../../formSchema/user';
+import { userFormSchema, UserFormData } from '@/app/_formSchema/user';
+import { Department, Role, User } from '@prisma/client';
 
-const UserCreate: NextPage = () => {
+type Props = {
+  user?: User | null;
+  roles: Role[];
+  departments: Department[];
+  onSuccessUrl: string;
+};
+
+export default function UserForm(props: Props) {
+  const user = props.user;
+  const roles = props.roles;
+  const departments = props.departments;
+  const onSuccessUrl = props.onSuccessUrl;
+
   const router = useRouter();
+
+  // props.user が与えられていれば「編集モード(edit)」とする。
+  // props.user が与えられていなれば「作成モード(create)」とする。
+  let mode: 'edit' | 'create';
+  if (user) {
+    mode = 'edit';
+  } else {
+    mode = 'create';
+  }
 
   const [postError, setPostError] = React.useState<string>();
   const {
     register,
-    //setValue,
     handleSubmit,
     formState: { errors },
-  } = useForm<UserFormData>({
+    reset,
+//  } = useForm<IFormInputs>({
+  } = useForm({
     resolver: yupResolver(userFormSchema),
+    defaultValues: { ...user },
   });
 
+  // フォームに初期値を入力する
+  /*
+  React.useEffect(() => {
+    if (user) {
+      reset(user);
+    }
+  }, [reset, user]);
+  */
+
   const onSubmit = handleSubmit(async (formData) => {
-    const response = await fetch('/api/user', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData),
-    });
+    let response: Response;
+    if (mode == 'edit') {
+      response = await fetch(`/api/user/${user?.id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });  
+    } else { // mode == 'create'
+      response = await fetch(`/api/user`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });  
+    }
     if (response.ok) {
-      const responseJSON = await response.json();
-      router.push('/user/');
+      //const response_json = await response.json();
+      router.refresh();
+      router.push(onSuccessUrl);
     } else {
-      // TODO: display error message
       setPostError('server error');
     }
   });
-
-  const { data: roles, error: role_error } = useSWR<Prisma.RoleCreateInput[]>('/api/role', fetcher);
-  const { data: departments, error: department_error } = useSWR<Prisma.DepartmentCreateInput[]>(
-    '/api/department',
-    fetcher
-  );
 
   return (
     <>
@@ -315,10 +252,6 @@ const UserCreate: NextPage = () => {
             {...register('name')}
           />
         </FormControl>
-        {/*
-            <label>name: </label>
-            <Input {...register("name")} />
-        */}
         <FormControl fullWidth>
           <TextField
             label='Email'
@@ -345,7 +278,7 @@ const UserCreate: NextPage = () => {
           <Select
             label='role'
             required
-            defaultValue=''
+            defaultValue={user ? user.roleId : ''}
             error={'roleId' in errors}
             {...register('roleId')}
           >
@@ -359,27 +292,12 @@ const UserCreate: NextPage = () => {
           </Select>
           <FormHelperText error={true}>{errors.roleId?.message}</FormHelperText>
         </FormControl>
-        {/*
-            <label>role: </label>
-            <select
-            {...register("roleId")}
-            defaultValue={roles ? roles[0].id : undefined}
-            >
-            {roles?.map((role) => {
-                return (
-                <option key={role.id} value={role.id}>
-                    {role.name}
-                </option>
-                );
-            })}
-            </select>
-            */}
         <FormControl fullWidth>
           <InputLabel>Department</InputLabel>
           <Select
             label='department'
             required
-            defaultValue=''
+            defaultValue={user ? user.departmentId : ''}
             error={'departmentId' in errors}
             {...register('departmentId')}
           >
@@ -393,27 +311,26 @@ const UserCreate: NextPage = () => {
           </Select>
           <FormHelperText error={true}>{errors.departmentId?.message}</FormHelperText>
         </FormControl>
-        {/*
-            <button
-            type="button"
-            onClick={() => {
-                setValue("lastName", "MIYAZATO");
-                setValue("firstName", "Shinobu");
-            }}
-            >
-            SetValue
-            </button>
-            <input type="submit" value="Submit" />
-        */}
         <Button type='submit' variant='contained' color='primary'>
           Submit
         </Button>
       </form>
     </>
   );
-};
-
-export default UserCreate;
+}
 ```
 
-この状態で [http://localhost:3000/user/create](http://localhost:3000/user/create) にアクセスすると、User 登録が表示されます。
+### pageコンポーネント(page.tsx)の実装
+
+```tsx title="app/user/create/page.tsx"
+import UserForm from '@/app/user/_components/user-form';
+import { DepartmentRepository } from '@/app/_repositories/Department';
+import { RoleRepository } from '@/app/_repositories/Role';
+
+export default async function UserCreate() {
+  const roles = await RoleRepository.findMany();
+  const departments = await DepartmentRepository.findMany();
+
+  return <UserForm departments={departments} roles={roles} onSuccessUrl='/user/' />;
+}
+```
