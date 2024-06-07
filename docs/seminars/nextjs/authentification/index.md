@@ -119,7 +119,7 @@ import CredentialsProvider from "next-auth/providers/credentials";
 
 //import { PrismaClient } from "@prisma/client";
 //const prisma = new PrismaClient();
-import { prisma } from "@/utils/prismaSingleton";
+import { prisma } from "@/app/_utils/prismaSingleton";
 
 export default NextAuth({
   // CredentialsProviderの場合 adapter は使用できない模様。

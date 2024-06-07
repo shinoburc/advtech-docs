@@ -20,10 +20,10 @@ TypeScript で使用しやすいように設計されています。つまり、
 
 ```shell
 npm install --save @prisma/client 
-npm install --save-dev prisma ts-node
+npm install --save-dev prisma tsx
 ```
 
-- ts-node: コマンドで TypeScript を実行するためのパッケージ。初期データ投入時に使用。
+- tsx: コマンドで TypeScript を実行するためのパッケージ。初期データ投入時に使用。
 
 ## prisma の初期化
 
@@ -325,7 +325,7 @@ package.json の scripts の次の項目に `prisma` を設定してください
   },
 ↓以下3行を追記。
   "prisma": {
-    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+    "seed": "tsx prisma/seed.ts"
   },
 ```
 
