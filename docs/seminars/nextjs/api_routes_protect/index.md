@@ -21,9 +21,9 @@ API プログラムの中でもアクセス制御を行うためのユーティ�
 
 この関数を API プログラムの中で使用することで、API 個別でアクセス制限を行うことができます。
 
-`utils/isValidToken.ts` を作成し、以下のように実装してください。
+`app/_utils/isValidToken.ts` を作成し、以下のように実装してください。
 
-```ts title=utils/isValidToken.ts
+```ts title=app/_utils/isValidToken.ts
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest } from "next";
 import { getToken } from "next-auth/jwt";
