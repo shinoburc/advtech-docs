@@ -73,9 +73,9 @@ yup ではスキーマと呼ばれるデータ構造でバリデーションの�
 
 今回はユーザ作成で使用する yup スキーマですので User モデルに関するスキーマを定義します。
 
-`formSchema/user.ts` を作成し、以下のように編集してください。
+`app/_formSchema/user.ts` を作成し、以下のように編集してください。
 
-```ts title="formSchema/user.ts"
+```ts title="app/_formSchema/user.ts"
 import * as yup from "yup";
 
 export const userFormSchema = yup
