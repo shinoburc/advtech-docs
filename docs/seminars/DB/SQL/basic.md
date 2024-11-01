@@ -9,7 +9,7 @@ sidebar_position: 1
 本教材は以下の環境を構築して使用します
 
 - postgres 13.2 
-    - [postgresql-13 をインストール](http://172.16.9.137/share/新入社員研修/software/postgresql-13.2-1-windows-x64.exe)、もしくは[オリジナルソースからpostgresql-13.2-1-windows-x64](https://www.postgresql.org/) をダウンロードします
+    - [postgresql-13 をインストール](http://172.16.7.40/share/新入社員研修/software/postgresql-13.2-1-windows-x64.exe)、もしくは[オリジナルソースからpostgresql-13.2-1-windows-x64](https://www.postgresql.org/) をダウンロードします
         - GUIの管理ツールである pgadmin4 のインストールにチェックが入っていることを確認します。
     - [PostgreSQL を Windows にインストールするには](https://qiita.com/tom-sato/items/037b8f8cb4b326710f71) を参考にインストール、[PostgreSQLのダウンロード及びインストール方法](https://eng-entrance.com/postgresql-download-install)の**PATHの設定**を参考にPATHの設定を行います
     - ポートは `5432` とします
@@ -17,18 +17,18 @@ sidebar_position: 1
 
 ## ビデオ版講義
 
-- こちらの [資料](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/) を使います [オリジナルソース](https://www.youtube.com/watch?v=j4kh9YBS7QU&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB)
+- こちらの [資料](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/) を使います [オリジナルソース](https://www.youtube.com/watch?v=j4kh9YBS7QU&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB)
 
 - SQL入門   レッスン01 SQL概要
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン01%20SQL概要-j4kh9YBS7QU.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン01%20SQL概要-j4kh9YBS7QU.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=j4kh9YBS7QU&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB)
 
 
 - SQL入門   レッスン02 CREATE DATABASE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン02%20CREATE%20DATABASE-qMrK7EoU7xc.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン02%20CREATE%20DATABASE-qMrK7EoU7xc.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=qMrK7EoU7xc&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=2)
 
@@ -52,7 +52,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン03 DROP DATABASE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン03%20DROP%20DATABASE-RLK1QaNODd0.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン03%20DROP%20DATABASE-RLK1QaNODd0.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=RLK1QaNODd0&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=3)
 
@@ -64,7 +64,7 @@ sidebar_position: 1
   
 - SQL入門   レッスン04 USE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン04%20USE-pYBbv3fJRXs.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン04%20USE-pYBbv3fJRXs.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=pYBbv3fJRXs&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=4)
 
@@ -85,26 +85,26 @@ sidebar_position: 1
 
 - SQL入門   SQL入門   レッスン05 データ型
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン05%20データ型-x8bgefVA1ks.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン05%20データ型-x8bgefVA1ks.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=x8bgefVA1ks&index=5&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB)
 
 - SQL入門   レッスン06 固定長と可変長
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン06%20固定長と可変長-6qn0S7PuDqk.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン06%20固定長と可変長-6qn0S7PuDqk.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=6qn0S7PuDqk&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=6)
 
   - char(n) varchar(n) の n は文字数
 - SQL入門   レッスン7 Constrain
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン07%20Constrain-OSA_Ek7UHTs.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン07%20Constrain-OSA_Ek7UHTs.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=OSA_Ek7UHTs&index=7&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB)
      
 - SQL入門   レッスン08 CREATE TABLE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン08%20CREATE%20TABLE-Tl9gvy_OcU8.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン08%20CREATE%20TABLE-Tl9gvy_OcU8.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=Tl9gvy_OcU8&index=8&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB)
 
@@ -138,7 +138,7 @@ sidebar_position: 1
      
 - SQL入門   レッスン09 SHOW TABLES
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン09%20SHOW%20TABLES-SL5NhsVGTeY.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン09%20SHOW%20TABLES-SL5NhsVGTeY.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=SL5NhsVGTeY&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=9)
 
@@ -166,7 +166,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン10 DROP TABLE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン10%20DROP%20TABLE-dwm9lrKGsGs.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン10%20DROP%20TABLE-dwm9lrKGsGs.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=dwm9lrKGsGs&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=10)
 
@@ -186,7 +186,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン11 ALTER TABLE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン11%20ALTER%20TABLE-KUltvDjKXzQ.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン11%20ALTER%20TABLE-KUltvDjKXzQ.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=KUltvDjKXzQ&index=11&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB)
 
@@ -208,7 +208,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン12 
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン12%20INSERT%20DATA-vBP6Y77O2iA.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン12%20INSERT%20DATA-vBP6Y77O2iA.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=vBP6Y77O2iA&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=12)
     
@@ -233,7 +233,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン13 SELECT文
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン13%20SELECT文-PkOB_-BcV3E.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン13%20SELECT文-PkOB_-BcV3E.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=PkOB_-BcV3E&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=13)
 
@@ -255,7 +255,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン14
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン14%20WHERE-f7i9pHwuWtk.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン14%20WHERE-f7i9pHwuWtk.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=f7i9pHwuWtk&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=14)
 
@@ -299,7 +299,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン15
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン15%20ANDとOR-Uv_Y5QTBl8U.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン15%20ANDとOR-Uv_Y5QTBl8U.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=Uv_Y5QTBl8U&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=15)
 
@@ -313,7 +313,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン16 LIKE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン16%20LIKE-7oPkfqsILfk.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン16%20LIKE-7oPkfqsILfk.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=7oPkfqsILfk&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=16)
 
@@ -337,7 +337,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン17
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン17%20BETWEEN-PvRc_i9uUY4.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン17%20BETWEEN-PvRc_i9uUY4.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=PvRc_i9uUY4&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=17)
 
@@ -351,7 +351,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン18
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン18%20IS%20NULL-eT2pEUp818w.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン18%20IS%20NULL-eT2pEUp818w.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=eT2pEUp818w&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=18)
 
@@ -380,7 +380,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン19 IN
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン19%20IN--Q79jMWOMzg.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン19%20IN--Q79jMWOMzg.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=-Q79jMWOMzg&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=19)
 
@@ -395,7 +395,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン20 LIMIT
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン20%20LIMIT-tI-ghaUsK28.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン20%20LIMIT-tI-ghaUsK28.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=tI-ghaUsK28&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=20)
 
@@ -418,7 +418,7 @@ sidebar_position: 1
     
 - SQL入門   レッスン21 DISTINCT
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン21%20DISTINCT-Ug67baxAqRU.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン21%20DISTINCT-Ug67baxAqRU.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=Ug67baxAqRU&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=21)
   
@@ -438,7 +438,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン22 ORDER BY
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン22%20ORDER%20BY--73vVIXt-FI.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン22%20ORDER%20BY--73vVIXt-FI.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=-73vVIXt-FI&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=22)
 
@@ -458,7 +458,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン23 AS
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン23%20AS-hdj4QhVD3p8.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン23%20AS-hdj4QhVD3p8.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=hdj4QhVD3p8&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=23)
 
@@ -519,7 +519,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン24 GROUP BY
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン24%20GROUP%20BY-gK99AGqnlz8.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン24%20GROUP%20BY-gK99AGqnlz8.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=gK99AGqnlz8&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=24)
 
@@ -543,7 +543,7 @@ sidebar_position: 1
   
 - SQL入門   レッスン25 DESC
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン25%20DESC-XVYdEPZKXZE.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン25%20DESC-XVYdEPZKXZE.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=XVYdEPZKXZE&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=25)
     
@@ -551,7 +551,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン26 HAVING
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン26%20HAVING-ZAwXQQQ_P8U.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン26%20HAVING-ZAwXQQQ_P8U.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=ZAwXQQQ_P8U&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=26)
 
@@ -574,7 +574,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン27 UPDATE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン27%20UPDATE-MFwU28IcfzY.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン27%20UPDATE-MFwU28IcfzY.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=MFwU28IcfzY&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=27)
 
@@ -588,7 +588,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン28 DELETE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン28%20DELETE-yyXNZJYJ_uk.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン28%20DELETE-yyXNZJYJ_uk.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=yyXNZJYJ_uk&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=28)
 
@@ -636,7 +636,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン29 TRUNCATE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン29%20TRUNCATE-A-IFExfTrVQ.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン29%20TRUNCATE-A-IFExfTrVQ.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=A-IFExfTrVQ&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=29)
 
@@ -683,7 +683,7 @@ sidebar_position: 1
   
 - SQL入門   レッスン30 他のテーブルデータを追加
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン30%20他のテーブルデータを追加-4B3_0W62ezo.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン30%20他のテーブルデータを追加-4B3_0W62ezo.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=4B3_0W62ezo&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=30)
 
@@ -755,7 +755,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン31 CREATE SELECT
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン31%20CREATE%20SELECT-r9ru6Avfvq8.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン31%20CREATE%20SELECT-r9ru6Avfvq8.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=r9ru6Avfvq8&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=31)
 
@@ -774,7 +774,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン32 CREATE LIKE
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン32%20CREATE%20LIKE-zgvEU2sovNs.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン32%20CREATE%20LIKE-zgvEU2sovNs.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=zgvEU2sovNs&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=32)
 
@@ -783,7 +783,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン33 数値関数
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン33%20数値関数-zmbVOLlvS1g.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン33%20数値関数-zmbVOLlvS1g.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=zmbVOLlvS1g&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=33)
 
@@ -810,7 +810,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン34 数値関数2
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン34%20数値関数2--n_Cw7DeJZA.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン34%20数値関数2--n_Cw7DeJZA.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=-n_Cw7DeJZA&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=34)
 
@@ -818,7 +818,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン35 文字関数
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン35%20文字関数-lI3860MtT7I.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン35%20文字関数-lI3860MtT7I.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=lI3860MtT7I&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=35)
 
@@ -842,28 +842,28 @@ sidebar_position: 1
 
 - SQL入門   レッスン36 文字関数2
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン36%20文字関数2-PICEfPIGOHM.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン36%20文字関数2-PICEfPIGOHM.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=PICEfPIGOHM&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=36)
     - このレッスンは飛ばします。
   
 - SQL入門   レッスン37 文字関数3
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン37%20文字関数3-VATVvAOL_Q0.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン37%20文字関数3-VATVvAOL_Q0.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=VATVvAOL_Q0&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=37)
     - このレッスンは飛ばします。
   
 - SQL入門   レッスン38 文字関数4
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン38%20文字関数4-9_KjOKUQxRA.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン38%20文字関数4-9_KjOKUQxRA.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=9_KjOKUQxRA&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=38)
     - このレッスンは飛ばします。
   
 - SQL入門   レッスン39 日付関数
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン39%20日付関数-VjS3D89gBNk.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン39%20日付関数-VjS3D89gBNk.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=VjS3D89gBNk&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=39)
 
@@ -883,21 +883,21 @@ sidebar_position: 1
 
 - SQL入門   レッスン40 日付関数2
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン40%20日付関数2-WPkUJb8fQ28.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン40%20日付関数2-WPkUJb8fQ28.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=WPkUJb8fQ28&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=40)
     - このレッスンは飛ばします。
 
 - SQL入門   レッスン41 日付関数3
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン41%20日付関数3-9dJ4cj5TKPg.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン41%20日付関数3-9dJ4cj5TKPg.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=9dJ4cj5TKPg&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=41)
     - このレッスンは飛ばします。
   
 - SQL入門   レッスン42 集計関数
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン42%20集計関数-npH529Zp6xM.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン42%20集計関数-npH529Zp6xM.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=npH529Zp6xM&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=42)
 
@@ -915,7 +915,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン43 ビュー概要
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン43%20ビュー概要-REcmAfEQgV4.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン43%20ビュー概要-REcmAfEQgV4.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=REcmAfEQgV4&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=43)
 
@@ -927,7 +927,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン44 ビューの操作
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン44%20ビューの操作-b-_GLxw7prY.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン44%20ビューの操作-b-_GLxw7prY.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=b-_GLxw7prY&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=44)
 
@@ -946,7 +946,7 @@ sidebar_position: 1
 
 - SQL入門   レッスン45 JOIN
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン45%20JOIN-cl44SbjH4jw.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン45%20JOIN-cl44SbjH4jw.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=cl44SbjH4jw&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=45)
   
@@ -982,7 +982,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン46 WHERE JOIN
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン46%20WHERE%20JOIN-EuPt9vJdTos.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン46%20WHERE%20JOIN-EuPt9vJdTos.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=EuPt9vJdTos&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=46)
 
@@ -993,7 +993,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン47 複数JOIN
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン47%20複数JOIN-_HzL8phhr8I.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン47%20複数JOIN-_HzL8phhr8I.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=_HzL8phhr8I&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=47)
 
@@ -1022,7 +1022,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン48 LEFT JOIN
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン48%20LEFT%20JOIN-HYdc0V95dZg.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン48%20LEFT%20JOIN-HYdc0V95dZg.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=HYdc0V95dZg&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=48)
 
@@ -1034,7 +1034,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン49 RIGHT JOIN 
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン49%20RIGHT%20JOIN-ECNgtXM85EM.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン49%20RIGHT%20JOIN-ECNgtXM85EM.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=ECNgtXM85EM&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=49)
 
@@ -1046,7 +1046,7 @@ sidebar_position: 1
    
 - SQL入門   レッスン50 FULL JOIN
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン50%20FULL%20JOIN-mlILwwsL0sg.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン50%20FULL%20JOIN-mlILwwsL0sg.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=mlILwwsL0sg&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=50)
    - ビデオで実行しているSQL文リスト
@@ -1062,21 +1062,21 @@ sidebar_position: 1
     
 - SQL入門   レッスン51 トリガー概要
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン51%20トリガー概要-nN3T9pPTgKk.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン51%20トリガー概要-nN3T9pPTgKk.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=nN3T9pPTgKk&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=51)
     - このレッスンは飛ばします。
 
 - SQL入門   レッスン52 トリガー操作
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン52%20トリガー操作-Yoakc-mLF-g.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン52%20トリガー操作-Yoakc-mLF-g.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=Yoakc-mLF-g&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=52)
     - このレッスンは飛ばします。
 
 - SQL入門   レッスン53 サブクエリー
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン53%20サブクエリー-4_dcoD8RHPA.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン53%20サブクエリー-4_dcoD8RHPA.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=4_dcoD8RHPA&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=53)
 
@@ -1090,13 +1090,13 @@ sidebar_position: 1
    
 - SQL入門   レッスン54 文字コード
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン54%20文字コード-yRLF_WyzRzw.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン54%20文字コード-yRLF_WyzRzw.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=yRLF_WyzRzw&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=54)
     - このレッスンは飛ばします。 
 - SQL入門   レッスン55 照合順序
 
-    - [ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン55%20照合順序-DLXRJ8u_6lU.mp4)
+    - [ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/DB入門/SQL入門/SQL入門%20%20%20レッスン55%20照合順序-DLXRJ8u_6lU.mp4)
 
     - [オリジナルビデオ教材](https://www.youtube.com/watch?v=DLXRJ8u_6lU&list=PLXOP1_-wmgsAB9S0cgM2z3DCQTFoetEVB&index=55)
     - このレッスンは飛ばします。

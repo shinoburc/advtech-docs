@@ -20,4 +20,4 @@ Let's React
 - [React - チュートリアル](https://ja.reactjs.org/tutorial/tutorial.html)
 
 
-- [上記ドキュメントを使用した React 勉強会の動画](http://172.16.9.137/seminars/NoNameSeminar/)(トータル17時間)
+- [上記ドキュメントを使用した React 勉強会の動画](http://172.16.7.40/seminars/NoNameSeminar/)(トータル17時間)

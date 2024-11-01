@@ -12,26 +12,26 @@ AWS について学ぶ。
 
 ## アマゾン ウェブ サービス（AWS）とは？（日本語字幕）
 
-[ビデオ教材](http://172.16.9.137/share/新入社員研修/教材/クラウドコンピューティング基礎/アマゾン%20ウェブ%20サービス（AWS）とは？（日本語字幕）-RrdwaCG8xjU.mp4)
+[ビデオ教材](http://172.16.7.40/share/新入社員研修/教材/クラウドコンピューティング基礎/アマゾン%20ウェブ%20サービス（AWS）とは？（日本語字幕）-RrdwaCG8xjU.mp4)
 
 [オリジナルビデオ教材 - アマゾン ウェブ サービス（AWS）とは？（日本語字幕）](https://www.youtube.com/watch?v=RrdwaCG8xjU)
 
 ## アマゾンウェブサービス（AWS）とは？ | AWS (日本語字幕) (3:11)
 
-[ビデオ教材 - アマゾンウェブサービス（AWS）とは？ | AWS (日本語字幕) (3:11)](http://172.16.9.137/share/新入社員研修/教材/クラウドコンピューティング基礎/アマゾンウェブサービス（AWS）とは？%20%20_%20AWS%20%28日本語字幕%29%20%283_11%29-TkPfiAwB7j8.mp4)
+[ビデオ教材 - アマゾンウェブサービス（AWS）とは？ | AWS (日本語字幕) (3:11)](http://172.16.7.40/share/新入社員研修/教材/クラウドコンピューティング基礎/アマゾンウェブサービス（AWS）とは？%20%20_%20AWS%20%28日本語字幕%29%20%283_11%29-TkPfiAwB7j8.mp4)
 
 [オリジナルビデオ教材 - アマゾンウェブサービス（AWS）とは？ | AWS (日本語字幕) (3:11)](https://www.youtube.com/watch?v=TkPfiAwB7j8)
 
 
 ## まるわかりクラウド入門 | AWS Summit Tokyo 2016
 
-[ビデオ教材 - まるわかりクラウド入門 | AWS Summit Tokyo 2016](http://172.16.9.137/share/新入社員研修/教材/クラウドコンピューティング基礎/まるわかりクラウド入門%20_%20AWS%20Summit%20Tokyo%202016-Kf16UrJayew.mp4)
+[ビデオ教材 - まるわかりクラウド入門 | AWS Summit Tokyo 2016](http://172.16.7.40/share/新入社員研修/教材/クラウドコンピューティング基礎/まるわかりクラウド入門%20_%20AWS%20Summit%20Tokyo%202016-Kf16UrJayew.mp4)
 
 [オリジナルビデオ教材 - まるわかりクラウド入門 | AWS Summit Tokyo 2016](https://www.youtube.com/watch?v=Kf16UrJayew)
 
 ## いまさら聞けない AWS 入門 | AWS Summit Tokyo 2016
 
-[ビデオ教材 - いまさら聞けない AWS 入門 | AWS Summit Tokyo 2016](http://172.16.9.137/share/新入社員研修/教材/クラウドコンピューティング基礎/いまさら聞けない%20AWS%20入門%20_%20AWS%20Summit%20Tokyo%202016-wVlRnmB6Ra4.mp4)
+[ビデオ教材 - いまさら聞けない AWS 入門 | AWS Summit Tokyo 2016](http://172.16.7.40/share/新入社員研修/教材/クラウドコンピューティング基礎/いまさら聞けない%20AWS%20入門%20_%20AWS%20Summit%20Tokyo%202016-wVlRnmB6Ra4.mp4)
 
 [オリジナルビデオ教材 - いまさら聞けない AWS 入門 | AWS Summit Tokyo 2016](https://www.youtube.com/watch?v=wVlRnmB6Ra4)
 

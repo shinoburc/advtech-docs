@@ -142,5 +142,5 @@ WBS 作成演習
 - 成果物
 
 WBS作成ツール
-- [Excelスケジュール管理表](http://172.16.9.137/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/software/161209_schedule_r1.xlsm) ([使い方の解説](https://kantan-shikaku.com/ks/schedule-table/))
+- [Excelスケジュール管理表](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/software/161209_schedule_r1.xlsm) ([使い方の解説](https://kantan-shikaku.com/ks/schedule-table/))
 - [GanttProject](https://ja.osdn.net/projects/sfnet_ganttproject/)

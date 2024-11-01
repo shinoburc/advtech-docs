@@ -17,30 +17,30 @@ sidebar_position: 3
 
 ## コマンドライン操作（前編） 
 
-[ビデオ教材 - コマンドライン操作（前編）](http://172.16.9.137/share/新入社員研修/教材/Linux/LPICレベル1対策講座「コマンドライン操作（前編）」-dWPBmDPQ3gw.mp4)
+[ビデオ教材 - コマンドライン操作（前編）](http://172.16.7.40/share/新入社員研修/教材/Linux/LPICレベル1対策講座「コマンドライン操作（前編）」-dWPBmDPQ3gw.mp4)
 
 [オリジナルビデオ教材 - コマンドライン操作（前編）](https://www.youtube.com/watch?v=dWPBmDPQ3gw&feature=youtu.be)
 
 ## コマンドライン操作（後編)
 
-[ビデオ教材 - コマンドライン操作（後編)](http://172.16.9.137/share/新入社員研修/教材/Linux/LPICレベル1対策講座「コマンドライン操作（後編）」-y71Lzyahk0M.mp4)
+[ビデオ教材 - コマンドライン操作（後編)](http://172.16.7.40/share/新入社員研修/教材/Linux/LPICレベル1対策講座「コマンドライン操作（後編）」-y71Lzyahk0M.mp4)
 
 [オリジナルビデオ教材 - コマンドライン操作（後編)](https://www.youtube.com/watch?v=y71Lzyahk0M&feature=youtu.be)
 
 ## パイプとリダイレクト 
 
-[ビデオ教材 - パイプとリダイレクト](http://172.16.9.137/share/新入社員研修/教材/Linux/LPICレベル1対策講座「パイプとリダイレクト」-kZfvHYFYAkQ.mp4)
+[ビデオ教材 - パイプとリダイレクト](http://172.16.7.40/share/新入社員研修/教材/Linux/LPICレベル1対策講座「パイプとリダイレクト」-kZfvHYFYAkQ.mp4)
 
 [オリジナルビデオ教材 - パイプとリダイレクト](https://www.youtube.com/watch?v=kZfvHYFYAkQ&feature=youtu.be)
 
 ## テキスト処理フィルタ 
 
-[ビデオ教材 - テキスト処理フィルタ](http://172.16.9.137/share/新入社員研修/教材/Linux/LPICレベル1対策講座「テキスト処理フィルタ」-CvvJc7TL2AE.mp4)
+[ビデオ教材 - テキスト処理フィルタ](http://172.16.7.40/share/新入社員研修/教材/Linux/LPICレベル1対策講座「テキスト処理フィルタ」-CvvJc7TL2AE.mp4)
 
 [オリジナルビデオ教材 - テキスト処理フィルタ](https://www.youtube.com/watch?v=CvvJc7TL2AE&feature=youtu.be)
 
 ## 正規表現を使ったテキスト検索
 
-[ビデオ教材 - 正規表現を使ったテキスト検索](http://172.16.9.137/share/新入社員研修/教材/Linux/LPICレベル1対策講座「正規表現を使ったテキスト検索」-6SW979xpsfo.mp4)
+[ビデオ教材 - 正規表現を使ったテキスト検索](http://172.16.7.40/share/新入社員研修/教材/Linux/LPICレベル1対策講座「正規表現を使ったテキスト検索」-6SW979xpsfo.mp4)
 
 [オリジナルビデオ教材 - 正規表現を使ったテキスト検索](https://www.youtube.com/watch?v=6SW979xpsfo&feature=youtu.be)

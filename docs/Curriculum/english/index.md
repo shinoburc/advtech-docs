@@ -1,0 +1,40 @@
+# English Materials
+
+- [Computer System](https://www.youtube.com/watch?v=3XipSI9ZzJA&list=PL9o9lNrP1luVQoR25mdOPP2yKyhNLLK0W&ab_channel=StanWarford)
+- [JavaScript](https://www.youtube.com/watch?v=PkZNo7MFNFg&ab_channel=freeCodeCamp.org)
+- [Linux](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/Linux.mp4) ([original](https://www.youtube.com/watch?v=IVquJh3DXUA))
+- DB
+    - [PostgreSQL](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/PostgreSQL.mp4) ([original](https://www.youtube.com/watch?v=qw--VYLpxG4))
+    - [DB Design](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/DB-Design.mp4) ([original](https://www.youtube.com/watch?v=ztHopE5Wnpc))
+- C# Programming
+    - Video
+        - [C# 101 video series](https://channel9.msdn.com/Series/CSharp-101)
+    - Document
+        - [C# Tutorials](https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/)
+- Version Control System
+    - [Git&Github](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/GitAndGitHub.mp4) ([original](https://www.youtube.com/watch?v=SWYqp7iY_Tc))
+- C# Framework
+    - .NET Core
+        - [.NET Core](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/dotnet-core.mp4) ([original](https://www.youtube.com/watch?v=X75Z8Eq879c))
+        - [.NET Core REST API](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/dotnet-core-REST-API.mp4) ([original](https://www.youtube.com/watch?v=mUAZ-EbGBOg))
+            - [Source Code](https://github.com/binarythistle/S02E01-REST-API-.Net-Core)
+    - WPF
+        - [WPF-01](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-01.mp4) ([original](https://www.youtube.com/watch?v=Vjldip84CXQ))
+            - [Source Code](https://github.com/angelsix/youtube)
+        - [WPF-02](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-02.mp4) ([original](https://www.youtube.com/watch?v=6OwyNiLPDNw))
+            - [Source Code](https://github.com/angelsix/youtube)
+        - [WPF-03](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-03.mp4) ([original](https://www.youtube.com/watch?v=U2ZvZwDZmJU))
+            - [Source Code](https://github.com/angelsix/youtube)
+        - [WPF-04](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-04.mp4) ([original](https://www.youtube.com/watch?v=TDOxHx-AMqQ))
+            - [Source Code](https://github.com/angelsix/youtube)
+        - [WPF-05](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-05.mp4) ([original](https://www.youtube.com/watch?v=JU9Ai0hpBUI))
+            - [Source Code](https://github.com/angelsix/youtube)
+        - [WPF-06](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-06.mp4) ([original](https://www.youtube.com/watch?v=trR5RQGEteM))
+            - [Source Code](https://github.com/angelsix/youtube)
+    - .NET Core & WPF
+        - [WPF-ASP.NET Core](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-ASP.NET.mp4) ([original](https://www.youtube.com/watch?v=_KnhLswmH74))
+            - [Source Code](https://codedocu.com/Details?d=2162&a=9&f=354&l=0)
+        - [WPF-REST-API-Access-01](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-REST-API-Access-01.mp4) ([original](https://www.youtube.com/watch?v=ZOmh4ofe92U))
+            - [Source Code](https://github.com/Abel13/LoLGoal/tree/get_summoner_data)
+        - [WPF-REST-API-Access-02](http://172.16.7.40/share/%E6%96%B0%E5%85%A5%E7%A4%BE%E5%93%A1%E7%A0%94%E4%BF%AE/%E6%95%99%E6%9D%90/english/WPF-REST-API-Access-02.mp4) ([original](https://www.youtube.com/watch?v=ZmY6WTfGymE))
+            - [Source Code](https://github.com/Abel13/LoLGoal/tree/get_summoner_data)

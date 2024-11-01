@@ -18,4 +18,4 @@ TypeScript は JavaScript に変換(トランスパイルと呼ばれます)さ�
 
 - [サバイバルTypeScript](https://typescriptbook.jp/)
 
-- [サバイバルTypeScript 勉強会の動画](http://172.16.9.137/seminars/NoNameSeminar/)(トータル23時間)
+- [サバイバルTypeScript 勉強会の動画](http://172.16.7.40/seminars/NoNameSeminar/)(トータル23時間)

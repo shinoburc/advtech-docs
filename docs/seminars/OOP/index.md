@@ -16,3 +16,5 @@ Let's OOP
 - [Wikipedia - オブジェクト指向プログラミング](https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E6%8C%87%E5%90%91%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0)
 
 - [mdn - JavaScript オブジェクト指向プログラミング](https://developer.mozilla.org/ja/docs/Learn/JavaScript/Objects/Object-oriented_programming)
+
+- [JavaScript/TypeScript におけるポリモフィズム(多態性)](polymorphism)

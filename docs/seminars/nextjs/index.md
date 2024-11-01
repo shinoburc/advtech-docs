@@ -15,5 +15,5 @@ Let's Next.js
 - [Next.js 日本語翻訳プロジェクト](https://nextjs-ja-translation-docs.vercel.app/)
 
 
-- [上記ドキュメントを使用した Next.js 勉強会の動画](http://172.16.9.137/seminars/NoNameSeminar/)(
+- [上記ドキュメントを使用した Next.js 勉強会の動画](http://172.16.7.40/seminars/NoNameSeminar/)(
 トータル10時間)
